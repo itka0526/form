@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form - Join IT Group</title>
+</head>
+
+<body class="min-h-screen">
+  <div class="flex-col justify-center px-8 py-4 w-full h-full" id="main-form">
+    <!-- Nuuts ug: 'hello_world' -->
+    <div class="flex-col hidden md:flex bg-gray-200 rounded-md shadow-md px-4 py-2 gap-2">
+      <span>
+        Энэ асуултны хариу энэ сайтны
+        <code>`HTML source code`</code>
+        дотор байгаа.
+      </span>
+      <input id="1-input"></input>
+    </div>
+
+    <div class="flex-col max-md:flex hidden bg-gray-200 rounded-md shadow-md px-4 py-2 gap-2">
+      <label for="2-input">
+        Компьютер ямар хэлийг ойлгодог вэ?
+      </label>
+      <select name="choice-2" id="2-input" class="bg-white">
+        <option value="angl_hel"><code>Англ хэл</code></option>
+        <option value="ascii"><code>ASCII</code></option>
+        <option value="zero_and_one"><code>0/1</code></option>
+      </select>
+    </div>
+
+    <div class="flex-col flex bg-gray-200 rounded-md shadow-md px-4 py-2 gap-2 mt-4">
+      <label for="3-input">
+        Энэ 5 сонголтын аль нь код файл вэ?
+      </label>
+      <select name="choice-3" id="3-input" class="bg-white">
+        <option value=".pdf">hicheel.pdf</option>
+        <option value=".css">main.css</option>
+        <option value=".txt"><code>password_cracker.txt</code></option>
+        <option value=".py"><code>test.py</code></option>
+        <option value=".xlsx"><code>programming_survey_data.xlsx</code></option>
+      </select>
+    </div>
+
+    <div class="flex-col flex bg-gray-200 rounded-md shadow-md px-4 py-2 gap-2 mt-4">
+      <label for="4-input">Python хэл дээр хэрхэн терминал руу бичих вэ?</label>
+      <select name="choice-4" id="4-input" class="bg-white">
+        <option value="echo"><code>echo "some_text"</code></option>
+        <option value="print"><code>print("some_text")</code></option>
+        <option value="printf"><code>printf("some_text")</code></option>
+      </select>
+    </div>
+
+    <div class="flex-col flex bg-gray-200 rounded-md shadow-md px-4 py-2 gap-2 mt-4">
+      <label for="5-input"><code>1 MB</code> файл дотор хэдэн <code>бит</code> байдаг вэ? (байт биш шүү)</label>
+      <select name="choice-5" id="5-input" class="bg-white">
+        <option value="1024**3"><code>1024*1024*1024</code></option>
+        <option value="1024**2*8"><code>1024*1024*8</code></option>
+        <option value="1024**4"><code>1024*1024*1024*1024</code></option>
+      </select>
+    </div>
+
+    <div class="flex-col flex bg-gray-200 rounded-md shadow-md px-4 py-2 gap-2 mt-4">
+      <label for="6-input">
+        Янз бүрийн Орос улсад болдог хакатон, CTF тэмцээн эсвэл технологийн уулзалтанд оролцмоор байна.
+      </label>
+      <select name="choice-6" id="6-input" class="bg-white">
+        <option value="yes"><code>Тийм</code></option>
+        <option value="no"><code>Үгүй</code></option>
+        <option value="maybe"><code>Магадгүй</code></option>
+      </select>
+    </div>
+
+    <div class="w-full mt-4 flex justify-center items-center">
+      <button class="px-4 py-2 bg-gray-200 shadow-md round font-medium" id="finish">
+        Болсоон!
+      </button>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
